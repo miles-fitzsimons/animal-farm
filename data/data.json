@@ -1,0 +1,12 @@
+{
+  "animals":[{"name": "Steve",
+              "image":"http://www.bluewateraquarium.in/wp-content/uploads/2014/09/Silver-Scat-Brackish-Water-Fish.jpg",
+              "description":"I am steve",
+              "votes":10,
+              "id":1},
+              {"name": "John",
+              "image":"http://www.londolozi.com/cubsden/wp-content/uploads/2013/08/Cheeetah-thumb.jpg",
+              "description":"I am John",
+              "votes":10,
+              "id":2}]
+}
