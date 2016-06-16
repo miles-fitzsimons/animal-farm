@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/miles-fitzsimons/animal-farm/issues"
   },
-  "homepage": "https://github.com/miles-fitzsimons/animal-farm#readme"
+  "homepage": "https://github.com/miles-fitzsimons/animal-farm#readme",
+  "devDependencies": {
+    "handlebars": "^4.0.5"
+  }
 }
