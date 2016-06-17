@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res) {
-  res.ridrect('/animals') // what is this doing?
+  res.redirect('/animals') // what is this doing?
 })
 
 app.get('/animals', function(req, res) {
