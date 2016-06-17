@@ -10,6 +10,12 @@ a {
   background: none;
 }
 
+nav {
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+
 .voting {
   margin: 0 auto;
   width: 10%
@@ -22,7 +28,7 @@ hr {
 }
 
 h1 {
-
+  font-size: 60px
 }
 
 h3 {
@@ -30,7 +36,9 @@ h3 {
   margin-right: auto;
   margin-bottom: 10px;
   margin-left: auto;
+  margin-top: 0;
   width: 50%;
+  font-size: 40px;
 }
 
 img {
@@ -45,10 +53,33 @@ ul {
 
 li {
   list-style-type: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-li:first-child {
+
+li:first-child img{
+  border: thick solid #ffffff;
+}
+
+li:first-child h3{
+  font-size: 50px;
+}
+
+#vote-items li:first-child {
   background-image: url("../img/confetti.gif");
   padding-bottom: 15px;
-  font-size: 50px;
+}
+
+#display-votes {
+  font-size: 20px;
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+#animal_name {
+  width: 300px;
+  height: 20px;
+  margin-bottom: 20px
 }

@@ -30,8 +30,11 @@ app.get('/animals/create', function(req, res) {
   res.render('animalCreate')
 })
 
-app.get('/animals/:id/view', function(req, res) {
-  res.render('animalView')
+app.get('/animals/:id/', function(req, res) {
+  var animal = animalsObj.animals.find(function(animals) {
+    return animals.id === parseInt(req.params.id)
+  })
+  res.render('animalView', animal)
 })
 
 module.exports = app

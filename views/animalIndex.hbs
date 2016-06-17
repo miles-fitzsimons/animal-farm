@@ -1,13 +1,15 @@
 <h1>VOTE MEOW</h1>
 <nav>
-  <a class="link" href="/animals/create">Generate a new animal</a>
+  <a class="link" href="/animals/create">ADD NEW ANIMAL FOR JUDGEMENT</a>
 </nav>
 
 <ul id="vote-items">
   {{#each animals}}
   <li>
     <h3>{{this.name}}</h3>
-    <a href="/animal/1"><img src="{{this.image}}"></a>
+    <a href="/animals/{{this.id}}"><img src="{{this.image}}"></a>
+    <p id="display-votes">VOTES: {{this.votes}}</p>
   </li>
+  <hr>
   {{/each}}
 </ul>
