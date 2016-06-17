@@ -30,7 +30,9 @@ h3 {
   margin-right: auto;
   margin-bottom: 10px;
   margin-left: auto;
+  margin-top: 0;
   width: 50%;
+  font-size: 40px;
 }
 
 img {
@@ -45,10 +47,19 @@ ul {
 
 li {
   list-style-type: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-li:first-child {
+#vote-items li:first-child {
   background-image: url("../img/confetti.gif");
   padding-bottom: 15px;
+}
+
+li:first-child img{
+  border: thick solid #ffffff;
+}
+
+li:first-child h3{
   font-size: 50px;
 }
