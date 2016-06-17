@@ -51,10 +51,6 @@ li {
   margin-bottom: 20px;
 }
 
-#vote-items li:first-child {
-  background-image: url("../img/confetti.gif");
-  padding-bottom: 15px;
-}
 
 li:first-child img{
   border: thick solid #ffffff;
@@ -62,4 +58,16 @@ li:first-child img{
 
 li:first-child h3{
   font-size: 50px;
+}
+
+#vote-items li:first-child {
+  background-image: url("../img/confetti.gif");
+  padding-bottom: 15px;
+}
+
+#display-votes {
+  font-size: 20px;
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto
 }
