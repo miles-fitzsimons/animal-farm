@@ -26,4 +26,12 @@ app.get('/animals', function(req, res) {
   console.log(animalsObj)
 })
 
+app.get('/animals/create', function(req, res) {
+  res.render('animalCreate')
+})
+
+app.get('/animals/:id/view', function(req, res) {
+  res.render('animalView')
+})
+
 module.exports = app
