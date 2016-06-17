@@ -1,20 +1,13 @@
-<h1>I Choose You!</h1>
+<h1>VOTE MEOW</h1>
 <nav>
   <a class="link" href="/animals/create">Generate a new animal</a>
 </nav>
 
 <ul id="vote-items">
-  <li class="leader">
-    <h3>Current Winner</h3>
-    <a href="/animal/1"><img src="placehold.it/150x150"></a>
-  </li>
-
+  {{#each animals}}
   <li>
-    <h3>Cat</h3>
-    <a href="/animal/2"><img src="placehold.it/150x150"></a>
+    <h3>{{this.name}}</h3>
+    <a href="/animal/1"><img src="{{this.image}}"></a>
   </li>
-  <li>
-    <h3>Dog</h3>
-    <a href="/animal/3"><img src="placehold.it/150x150"></a>
-  </li>
+  {{/each}}
 </ul>
