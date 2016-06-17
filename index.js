@@ -21,8 +21,8 @@ app.get('/', function(req, res) {
 })
 
 app.get('/animals', function(req, res) {
- res.render('animalIndex', animalsObj)
+  res.render('animalIndex', animalsObj)
+  console.log(animalsObj)
 })
-
 
 module.exports = app

@@ -4,18 +4,10 @@
 </nav>
 
 <ul id="vote-items">
-  <li id="leader">
-    <h3>Current Winner</h3>
-    <a href="/animal/{{this.id}}"><img src="http://www.placehold.it/150x150.jpg"></a>
-  </li>
-
+  {{#each animals}}
   <li>
-    <h3>Cat</h3>
-    <a href="/animal/{{this.id}}"><img src="http://www.placehold.it/150x150.jpg"></a>
+    <h3>{{this.name}}</h3>
+    <a href="/animal/1"><img src="{{this.image}}"></a>
   </li>
-
-  <li>
-    <h3>Dog</h3>
-    <a href="/animal/{{this.id}}"><img src="http://www.placehold.it/150x150.jpg"></a>
-  </li>
+  {{/each}}
 </ul>
