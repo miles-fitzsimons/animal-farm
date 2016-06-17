@@ -4,11 +4,6 @@
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-#leader {
-  background: #ccffff;
-}
-
-
 a {
   text-decoration: none;
   text-decoration-color: none;
@@ -42,4 +37,8 @@ ul {
 
 li {
   list-style-type: none;
+}
+
+li:first-child {
+  background: #ccffff;
 }
