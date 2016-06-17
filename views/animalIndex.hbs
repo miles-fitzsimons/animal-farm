@@ -7,8 +7,8 @@
   {{#each animals}}
   <li>
     <h3>{{this.name}}</h3>
-    <a href="/animal/1"><img src="{{this.image}}"></a>
-    <p id="display-votes">VOTES {{this.votes}}</p>
+    <a href="/animals/{{this.id}}"><img src="{{this.image}}"></a>
+    <p id="display-votes">VOTES: {{this.votes}}</p>
   </li>
   <hr>
   {{/each}}
