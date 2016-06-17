@@ -30,7 +30,13 @@ app.get('/animals/create', function(req, res) {
   res.render('animalCreate')
 })
 
-app.get('/animals/:id/view', function(req, res) {
+app.post('/animals', function(req,res){
+  createAnimal(req.body.name, animalsObj, res)
+  // res.redirect('/animals')
+  //in the create file
+})
+
+app.get('/animals/:id', function(req, res) {
   res.render('animalView')
 })
 
