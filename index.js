@@ -4,7 +4,8 @@ var request = require('superagent')
 var dotenv = require('dotenv')
 var fs = require('fs')
 var path = require('path')
-var bodyParser = require('body-parser');
+var bodyParser = require('body-parser')
+var createAnimal = require('./lib/create-animal')
 
 var animalsObj = require('./data/data.json')
 
