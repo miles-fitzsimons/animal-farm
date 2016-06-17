@@ -3,12 +3,11 @@
   <a class="link" href="/animals/create">Generate a new animal</a>
 </nav>
 
-<ul id="vote-items">
+<!-- <ul id="vote-items">
   <li class="leader">
     <h3>Current Winner</h3>
     <a href="/animal/1"><img src="placehold.it/150x150"></a>
   </li>
-
   <li>
     <h3>Cat</h3>
     <a href="/animal/2"><img src="placehold.it/150x150"></a>
@@ -17,4 +16,13 @@
     <h3>Dog</h3>
     <a href="/animal/3"><img src="placehold.it/150x150"></a>
   </li>
+</ul> -->
+
+<ul id="vote-items">
+  {{#each animals}}
+  <li>
+    <h3>{{this.name}}</h3>
+    <a href="/animal/1"><img src="{{this.image}}"></a>
+  </li>
+  {{/each}}
 </ul>
