@@ -15,8 +15,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res) {
-  res.send("hello world") // what is this doing?
+  res.ridrect('/animals') // what is this doing?
 })
 
+app.get('/animals', function(req, res) {
+  res.render('animalIndex', animalsObj)
+})
 
 module.exports = app
